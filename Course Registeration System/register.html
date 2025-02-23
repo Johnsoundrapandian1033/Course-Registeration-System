@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register a Course</title>
+        <style>
+            h1{
+                color:yellow;
+                text-align:center;
+            
+            }
+            body {
+                margin-top:70px;
+                text-align: center;
+                background-color:black;
+            }
+            form{
+                margin:auto;
+                padding:20px;
+                width:400px;
+                background-color: #f0f0f0;
+                font-size: 20px;
+            }
+            input,select,button,option{
+                font-size: 16px;
+                margin:10px;
+                height:25px;
+                width:300px;
+                text-align:center;
+            }
+            select{
+                height:30px;
+            }
+            button{
+                height:30px;
+                color:white;
+                background-color: #595d5e;
+                /* border-radius: 5px; */
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer;
+                /* padding:20px 20px; */
+            }
+            button:hover{
+                background-color: green;
+            }
+            button:active{
+                background-color: rgb(3, 54, 1);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Kickstart with an exciting course</h1>
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your Name </label><br>
+            <input type="text" name="name"><br><br>
+
+            <label for="emaiId">Enter Email Id </label><br>
+            <input type="text" name="emailId"><br><br>
+
+            <label for="course">Choose a Course </label><br>
+            <select id="course" name="courseName">
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Python for ML">Python for ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+            </select><br><br>
+            <button type="submit">submit</button>
+            
+        </form>
+    </body>
+</html>
